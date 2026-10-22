@@ -3,24 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Josefin siuv</title>
+    <title>Minun ensimmäinen HTML sivu</title>
 </head>
 <body>
-    <h1>Tervetuloa Josefin ensimmäiselle sivulle</h1>
-    <h2>Seuraavaksi tulen kertomaan teille minusta enemmän</h2>
-    <p>Olen amk:ssa opiskelija ja harrastan koripalloa. Työskentelen myös kuntosalilla</p>
-    <ol>
-        <li>Pizza</li>
-        <li>Burgeri</li>
-        <li>Mustikkapiirakka</li>
-    </ol>
-    
+    <h1>Josef Bayoumi</h1>
+    <p>Tykkään käydä kuntosalilla sekä kuunnella musiikkia.</p>
+    <img src="Josef_Bayoumi.jpg" alt="Kuva itsestäni armeijan varustuksessa" width="500">
+    <h2>Harrastukseni</h2>
     <ul>
+        <li>Kuntosali</li>
         <li>Koripallo</li>
-        <li>Salibandy</li>
-        <li>Jalkapallo</li>
+        <li>Lukeminen</li>
     </ul>
-
-    <img src="kounde matchday.jpg"  alt="koudne matchday" width="500" height="600">
+    <a href="https://www.elixia.fi/aloita-harjoittelu-elixia/valitse-jasenyystyyppi" target="_blank">Kannattaa hankkia meiltä kuntosalijäsenyys tai olla mun kautta yhteydessä</a>
+    <table border="1">
+        <tr>
+            <th>Kurssini</th>
+            <th>Kuvaus</th>
+        </tr>
+        <tr>
+            <td>Professional communication in English</td>
+            <td>Sisälää tradenomeille suunattua sanastoa englanniksi</td>
+        </tr>
+        <tr>
+            <td>Liiketoimintaympäristö</td>
+            <td>Laskuja liittyen yrittäjyyteen</td>
+        </tr>
+        <tr>
+            <td>Websivuston kehittäminen</td>
+            <td>Websivuston suunnittelu ja toteutus</td>
+        </tr>
+    </table>
+        <form action="https://www.elixia.fi/aloita-harjoittelu-elixia/valitse-jasenyystyyppi" method="get">
+            <label for="name">Nimi:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Sähköposti:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <input type="submit" value="Lähetä">
+        </form>
 </body>
 </html>
